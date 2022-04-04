@@ -1,5 +1,5 @@
-Laravel‚ÌGraphQLƒ‰ƒCƒuƒ‰ƒŠlighthouse‚ÌƒeƒXƒg—p‚Éì‚Á‚½dockerŠÂ‹«B
-/src“à‚ÉularavelvƒtƒHƒ‹ƒ_‚Æ‚µ‚Ä‰º‹LƒŠƒ|ƒWƒgƒŠgit pull‚µ‚Ä‚¨‚­B
+Laravelã®GraphQLãƒ©ã‚¤ãƒ–ãƒ©ãƒªlighthouseã®ãƒ†ã‚¹ãƒˆç”¨ã«ä½œã£ãŸdockerç’°å¢ƒã€‚
+/srcå†…ã«ã€Œlaravelã€ãƒ•ã‚©ãƒ«ãƒ€ã¨ã—ã¦ä¸‹è¨˜ãƒªãƒã‚¸ãƒˆãƒªgit pullã—ã¦ãŠãã€‚
 
 lighthouse-example
 https://github.com/nuwave/lighthouse-example
@@ -8,32 +8,32 @@ lighthouse-tutorial
 https://github.com/nuwave/lighthouse-tutorial
 
 
-EŠeŽíƒo[ƒWƒ‡ƒ“
+ãƒ»å„ç¨®ãƒãƒ¼ã‚¸ãƒ§ãƒ³
 PHP8.0
 Composer version 2.3.3
 mysql5.7
 
-DB‚ÌƒzƒXƒg‘¤ƒ|[ƒg‚Í4306
+DBã®ãƒ›ã‚¹ãƒˆå´ãƒãƒ¼ãƒˆã¯4306
 
-ƒvƒŒƒCƒOƒ‰ƒEƒ“ƒhURL
+ãƒ—ãƒ¬ã‚¤ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰URL
 http://127.0.0.1:8001/graphql-playground
 
-.env.laravel‚Í.env‚ÉƒŠƒl[ƒ€‚µ‚ÄpullŒã‚ÉlaravelƒvƒƒWƒFƒNƒg‚É’u‚­—Ç‚¢
+.env.laravelã¯.envã«ãƒªãƒãƒ¼ãƒ ã—ã¦pullå¾Œã«laravelãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«ç½®ãè‰¯ã„
 
 
-ƒ}ƒCƒOƒŒ[ƒVƒ‡ƒ“
+ãƒžã‚¤ã‚°ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³
 php artisan migrate
 
 
-ƒtƒ@ƒNƒgƒŠ[
+ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼
 php artisan tinker
 \App\Models\Comment::factory(10)->create()
 
 
 ========================================================
 
-E’ˆÓ“_Aƒnƒ}‚Á‚½ã©
-dc.yml‚ÌMYSQL_PASSWORD‚ÆMYSQL_ROOT_PASSWORD‚É“¯‚¶ƒpƒXƒ[ƒh‚ð“ü‚ê‚é‚ÆƒGƒ‰[‚Æ‚È‚èdbƒRƒ“ƒeƒi‚ªI—¹‚µ‚Ä‚µ‚Ü‚¤B
-.env‚ÌDBƒ†[ƒU‚ÍMYSQL_USER‚ðŽw’èBrootƒ†[ƒUŽw’è‚·‚é‚Æƒ}ƒCƒOƒŒ[ƒVƒ‡ƒ“ŽÀsŽžƒ†[ƒUŒ ŒÀSQLƒGƒ‰[‚ªo‚éB
+ãƒ»æ³¨æ„ç‚¹ã€ãƒãƒžã£ãŸç½ 
+dc.ymlã®MYSQL_PASSWORDã¨MYSQL_ROOT_PASSWORDã«åŒã˜ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥ã‚Œã‚‹ã¨ã‚¨ãƒ©ãƒ¼ã¨ãªã‚Šdbã‚³ãƒ³ãƒ†ãƒŠãŒçµ‚äº†ã—ã¦ã—ã¾ã†ã€‚
+.envã®DBãƒ¦ãƒ¼ã‚¶ã¯MYSQL_USERã‚’æŒ‡å®šã€‚rootãƒ¦ãƒ¼ã‚¶æŒ‡å®šã™ã‚‹ã¨ãƒžã‚¤ã‚°ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³å®Ÿè¡Œæ™‚ãƒ¦ãƒ¼ã‚¶æ¨©é™SQLã‚¨ãƒ©ãƒ¼ãŒå‡ºã‚‹ã€‚
 
-¡‚Ü‚Å‚ÍdockerŠÂ‹«‚Å‚Í‹¤—L‚ÌDB‚ðŽg—p‚µ‚Ä‚«‚½‚½‚ßDBƒRƒ“ƒeƒiŠÖŒW‚ÅçT‚«‚ª‚¿‚¾‚Á‚½‚Ì‚Åƒƒ‚OOG
+ä»Šã¾ã§ã¯dockerç’°å¢ƒã§ã¯å…±æœ‰ã®DBã‚’ä½¿ç”¨ã—ã¦ããŸãŸã‚DBã‚³ãƒ³ãƒ†ãƒŠé–¢ä¿‚ã§èº“ããŒã¡ã ã£ãŸã®ã§ãƒ¡ãƒ¢ï¼¾ï¼¾ï¼›
